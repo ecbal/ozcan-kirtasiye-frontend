@@ -1,0 +1,130 @@
+/* CategoryEdit.css */
+
+.category-edit-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .add-category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .add-category input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .add-category input:focus {
+    border-color: #4CAF50;
+  }
+  
+  .add-category button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-category button:hover {
+    background-color: #45a049;
+  }
+  
+  .category-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    flex-wrap: nowrap; /* Bu satır çok önemli */
+  }
+  
+  .category-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .category-actions {
+    display: flex;
+    gap: 10px; /* Butonlar arasına boşluk ekledim */
+  }
+  
+  .category-actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .category-actions button:hover {
+    opacity: 0.8;
+  }
+  
+  .category-actions button:first-child {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .category-actions button:first-child:hover {
+    background-color: #e53935;
+  }
+  
+  .category-actions button:last-child {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .category-actions button:last-child:hover {
+    background-color: #0056b3;
+  }
+  
+  .category-actions button:active {
+    transform: scale(0.98);
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4CAF50;
+  }
+  

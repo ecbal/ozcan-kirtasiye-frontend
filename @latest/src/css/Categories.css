@@ -1,0 +1,110 @@
+/* Genel Container */
+.categories-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  /* Koyu mor */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Başlık */
+.categories-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #E3F6F5; /* Açık mavi-yeşil */
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Kategori Listesi */
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  padding: 0 2rem;
+}
+
+/* Kategori Öğesi */
+.category-item {
+  padding: 2.5rem;
+  border: 1px solid #2C698D; /* Orta mavi */
+  border-radius: 10px;
+  background-color: #2C698D; /* Neredeyse siyah */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Kategori Adı */
+.category-name {
+  font-size: 2rem;
+  color: #BAE8E8; /* Açık mavi */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Ürün Bilgisi */
+.product-info {
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  color: #E3F6F5; /* Açık mavi-yeşil */
+}
+
+.product-count {
+  font-size: 1.2rem;
+  color: #E3F6F5;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+}
+
+.no-products {
+  font-size: 1.2rem;
+  color: #e74c3c; /* Kırmızı */
+  font-weight: 500;
+}
+
+.no-categories {
+  font-size: 1.3rem;
+  color: #E3F6F5; /* Açık mavi-yeşil */
+  font-weight: 500;
+  text-align: center;
+  grid-column: span 2;
+}
+
+/* Ürünlere Git Linki */
+.view-products-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  background-color: #3e93c5; /* Orta mavi */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-products-link:hover {
+  background-color: #BAE8E8; /* Açık mavi */
+  transform: scale(1.05);
+}

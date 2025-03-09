@@ -1,0 +1,54 @@
+/* Global Stiller */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212; /* Koyu arkaplan */
+  color: white; /* Beyaz yazı */
+}
+
+/* Navbar Stilleri */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #a8cbff;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.dark {
+  background-color: #333;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}

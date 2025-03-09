@@ -1,0 +1,156 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #333;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .userInfo {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+  }
+  
+  .userInfo p {
+    margin: 8px 0;
+  }
+  
+  .content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .orderListContainer {
+    flex: 1;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .orderList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .orderItem {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .orderItem:hover {
+    background-color: #eaf1ff;
+    transform: scale(1.05);
+  }
+  
+  .selectedOrder {
+    background-color: #3498db;
+    color: rgb(0, 0, 0);
+    border: 2px solid #3498db;
+  }
+  
+  .orderDetailContainer {
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  .orderDetail {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .orderDetail h4 {
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .orderDetail ul {
+    padding-left: 20px;
+  }
+  
+  .noSelection {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3498db;
+  }
+  
+  .backButton,
+  .deleteButton {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .backButton {
+    background-color: #3498db;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .backButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .deleteButton {
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c0392b;
+  }
+  

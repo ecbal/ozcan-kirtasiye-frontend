@@ -1,0 +1,203 @@
+/* Genel Ayarlar */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Menü Stilleri */
+.menu {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.menuButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menuButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.menuButton:active {
+  transform: translateY(0);
+}
+
+/* Liste Stilleri */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listItemButtons {
+  display: flex;
+  gap: 8px; /* Butonlar arasında boşluk */
+}
+
+.listItem .editButton,
+.listItem .deleteButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center; /* Simgeleri veya metinleri ortalar */
+  justify-content: center;
+  min-width: 80px; /* Butonların eşit genişlikte olması için */
+}
+
+/* Edit Butonu */
+.editButton {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.editButton:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+/* Listeyi düzenleyerek sabit buton boyutları */
+.deleteButton {
+  padding: 8px 16px; /* Sabit padding */
+  font-size: 14px; /* Aynı font boyutu */
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover durumunda butonun arka plan rengini değiştirme */
+.deleteButton:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+
+
+/* Form Stilleri */
+.form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Düğme Grupları */
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.buttonGroup .button,
+.buttonGroup .cancelButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.cancelButton {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+/* Sayfalama Stilleri */
+.pagination {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.paginationButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.paginationButton:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+.paginationButton:hover:enabled {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.pageInfo {
+  font-size: 15px;
+  color: #555;
+}

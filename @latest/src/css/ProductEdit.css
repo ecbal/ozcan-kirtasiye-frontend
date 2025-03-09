@@ -1,0 +1,243 @@
+.product-edit-container {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .summary-table th, .summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .summary-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .summary-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .summary-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  h2 {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  input[type="file"] {
+    border: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+    margin-left: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #c82333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Butonların dikey hizalanmasını sağlamak için */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul li button {
+    margin-left: 10px;
+  }
+  
+  ul li button:first-child {
+    margin-left: 0; /* Silme butonuna ekstra boşluk bırakmamak için */
+  }
+  
+  ul li .button-container {
+    display: flex;
+    justify-content: flex-end; /* Butonları sağa hizalamak için */
+    gap: 10px;
+  }
+  
+  ul li button {
+    background-color: #ffc107;
+  }
+  
+  ul li button:hover {
+    background-color: #e0a800;
+  }
+  
+  ul li button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  ul li button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .product-edit-container {
+      padding: 15px;
+    }
+  
+    .options {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    form div {
+      margin-bottom: 10px;
+    }
+  
+    button[type="button"] {
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,196 @@
+/* Ürün Sayfası Ana Konteyneri */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+/* Ürün Detayları Konteyneri */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Ürün Resmi */
+/* Ürün Resmi */
+.product-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 90%;  /* Sabit genişlik */
+  height: 90%; /* Sabit yükseklik */
+  object-fit: cover; /* Resmin oranını koruyarak, kesmeden dolacak şekilde yerleştirir */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Ürün Bilgileri */
+.product-info {
+  flex: 2;
+  padding: 20px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: start;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.product-stock {
+  font-size: 16px;
+  color: #28a745;
+}
+
+.product-category {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Adet Girişi */
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-input {
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 60px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Sepete Ekle Butonu */
+.add-to-cart-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #dc3545;
+}
+
+/* Yorumlar Konteyneri */
+.comments-container {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-item {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-user {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.comment-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.comment-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-button:hover {
+  background-color: #c82333;
+}
+
+/* Yorum Yapma Alanı */
+.comment-submit-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  resize: vertical;
+}
+
+.comment-submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-submit-button:hover {
+  background-color: #218838;
+}
+
+/* Giriş Yapmanız Gerekli Uyarısı */
+.comment-submit-container div {
+  color: #dc3545;
+  font-size: 16px;
+  margin-top: 10px;
+}
